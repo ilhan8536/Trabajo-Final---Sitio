@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="noche">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación e Historia</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" aria-label="Inicio">
+        <svg viewBox="0 0 160 130" fill="none" stroke="#00f2ff" stroke-linejoin="round" stroke-linecap="round" role="img" aria-label="Logo">
+          <rect x="20" y="5" width="120" height="80" stroke-width="6"/>
+          <rect x="32" y="17" width="96" height="56" stroke-width="3"/>
+          <path d="M42 31h38M42 43h56M42 55h28" stroke-width="5"/>
+          <rect x="68" y="85" width="24" height="14" stroke-width="5"/>
+          <path d="M12 125l22-24h92l22 24z" stroke-width="5"/>
+        </svg>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="historia.html" class="activo">HISTORIA</a></li>
+          <li><a href="juguemos.html" >JUGUEMOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero hero-historia">
+      <h1>HISTORIA DE LA PROGRAMACION</h1>
+    </section>
+    <main>
+      <article class="encapsulado">
+        <img src="assets/imagenes/1-800x534.jpg" alt="Equipo trabajando frente a una computadora antigua">
+        <div>
+          <h2>El principio de la historia de la programación</h2>
+          <p>El primer lenguaje de programación fue un algoritmo creado por Ada Lovelace en 1883. Ada Lovelace creó este algoritmo para el motor analítico de Charles Babbage.
+          El propósito de este algoritmo era calcular los números de Bernoulli.
+          En 1936, por primera vez, los códigos informáticos fueron especializados por Alonzo Church y Alan Turing.
+          Church expresó el cálculo lambda de forma formulativa.</p>
+        </div>
+      </article>
+      <article class="encapsulado">
+        <img src="assets/imagenes/img-historia.jpg" alt="Computadora antigua con paneles y cables">
+        <div>
+          <h2>Lenguaje de ensamblaje</h2>
+          <p>Los primeros ordenadores modernos (alimentados eléctricamente) fueron creados en los 
+            años 40. Estas computadoras estaban limitadas en velocidad y capacidad de memoria.
+            Debido a estas limitaciones, los programadores se vieron obligados a escribir manualmente programas en lenguaje ensamblador. Siendo un lenguaje de programación de bajo nivel, era una tarea difícil programarlo manualmente. Los programadores se dieron cuenta entonces de la necesidad de lenguajes de alto nivel para disminuir el esfuerzo que se requería para escribir los programas en lenguaje ensamblador manualmente.</p>
+        </div>
+      </article>
+      <article class="encapsulado">
+        <img src="assets/imagenes/nerdpol-ken-den.webp" alt="Dos programadores frente a una computadora de los años 70">
+        <div>
+          <h2>Los primeros lenguajes de programacion</h2>
+          <p>FORmulaTRANslation es el lenguaje de programación más antiguo y que continúa en uso. 
+            Creada por John Backus en 1957, esta herramienta fue desarrollada para la computación científica de alto nivel, matemáticas y estadísticas.
+            A día de hoy, este lenguaje se sigue usando en la industria automovilística, aeroespacial, gubernamental y la investigación. Por ejemplo, es muy útil para el pronóstico de los servicios meteorológicos.</p>
+          <p>En 1959 se desarrollo Cobol, que está detrás de la mayoría de los sistemas de 
+            transacciones de negocio de los procesos de las tarjetas de crédito, ATMs (Modo de Transferencia Asíncrona), telefonía, sistemas hospitalarios, gobierno, sistemas 
+            automatizados y señales de tráfico.
+            El desarrollo de Cobol, creado por Grace Murray Hopper, muestra un lenguaje famipar y uniforme para transacciones empresariales. Por ejemplo, lo usan en el servicio postal estadounidense.</p>
+            
+          <p>
+            <b>
+            En 1964 se creo Basic, que fue diseñado como un lenguaje simppficado para aquellos que no tenían como base fuertes conocimientos técnicos o matemáticos.
+            Entre 1969 y 1973 se crea C, a manos de Dennis Ritchie para los laboratorios Bell Telephone para usarlos en el sistema Unix. Se le llamó «C» porque sus características derivaban de un lenguaje anterior llamado «B».
+            En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader.
+            Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia.
+            </b>
+          </p>
+        </div>
+      </article>
+      <section>
+        <h2>Hablemos un poquito mas...</h2>
+        <video id="video" poster="assets/imagenes/img-video.jpg" preload="metadata">
+          <source src="assets/video/historia-Comp.mp4" type="video/mp4">
+          <source src="assets/video/historia-Comp.ogv" type="video/ogg">
+        </video>
+        <div class="barra">
+          <button id="btn-play" type="button" aria-label="Reproducir">
+            <img src="assets/imagenes/play.svg" alt="">
+          </button>
+          <button id="btn-pausa" type="button" aria-label="Pausar">
+            <img src="assets/imagenes/pausa.svg" alt="">
+          </button>
+          <input id="progreso" type="range" min="0" max="100" value="0" step="0.1" aria-label="Progreso del video">
+          <span id="tiempo">0:00 / 0:00</span>
+          <input id="volumen" type="range" min="0" max="1" value="1" step="0.05" aria-label="Volumen">
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="assets/icons/icon-code.png" alt="Logo">
+      <div>
+        <h3>PROGRAMACIÓN E HISTORIA</h3>
+        <p>Sitio con fines educativos</p>
+      </div>
+    </footer>
+    <button id="tema" type="button">
+      <img src="assets/icons/sun.svg" alt="">
+    </button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
